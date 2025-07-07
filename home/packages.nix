@@ -59,7 +59,12 @@ in
       	gdb
         tree
 	neovim
-	tree-sitter
+	javacc
+	go
+	cargo
+	php
+	julia-lts
+	tree-sitter # neovim parser
         bandwhich # display current network utilization by process
         coreutils
         curl
