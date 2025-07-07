@@ -60,6 +60,7 @@ in
         tree
 	neovim
 	javacc
+	zulu24
 	go
 	cargo
 	php
