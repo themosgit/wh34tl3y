@@ -59,6 +59,7 @@ in
       	gdb
         tree
 	neovim
+	tree-sitter
         bandwhich # display current network utilization by process
         coreutils
         curl

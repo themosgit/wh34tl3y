@@ -18,6 +18,9 @@ in
     cursor-invert-fg-bg = true;
     cursor-style = "bar";
 
+    background-opacity = 0.95;
+    background-blur = true;
+
     shell-integration = "fish";
 
     macos-icon = "xray";
