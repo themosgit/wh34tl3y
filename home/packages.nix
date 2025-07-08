@@ -58,14 +58,14 @@ in
       inherit (pkgs)
       	gdb
         tree
-	neovim
-	javacc
-	zulu24
-	go
-	cargo
-	php
-	julia-lts
-	tree-sitter # neovim parser
+	    neovim
+        javacc
+        zulu24
+        go
+        cargo
+        php
+        julia-lts
+        tree-sitter # neovim parser
         bandwhich # display current network utilization by process
         coreutils
         curl
@@ -86,7 +86,6 @@ in
 
       # Dev stuff
       inherit (pkgs)
-        cloc # source code line counter
         nodejs
         typescript
         ;
