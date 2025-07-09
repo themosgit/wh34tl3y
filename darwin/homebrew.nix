@@ -66,5 +66,7 @@ in
   homebrew.brews = [
   	"composer"
   	"luarocks"
+    "nodejs"
+    "nvm"
   ];
 }

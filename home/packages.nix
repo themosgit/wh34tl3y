@@ -56,7 +56,9 @@ in
     {
       # Some basics
       inherit (pkgs)
+        tmux
       	gdb
+        typescript
         tree
 	    neovim
         javacc
@@ -82,12 +84,6 @@ in
         upterm # secure terminal sharing
         wget
         xz # extract XZ archives
-        ;
-
-      # Dev stuff
-      inherit (pkgs)
-        nodejs
-        typescript
         ;
 
       # Useful nix related tools
