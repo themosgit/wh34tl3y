@@ -56,6 +56,9 @@ in
     {
       # Some basics
       inherit (pkgs)
+        colima
+        docker
+        rustup
         tmux
       	gdb
         typescript
@@ -64,7 +67,6 @@ in
         javacc
         zulu24
         go
-        cargo
         php
         julia-lts
         tree-sitter # neovim parser
