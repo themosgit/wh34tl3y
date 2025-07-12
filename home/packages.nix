@@ -56,7 +56,8 @@ in
     {
       # Some basics
       inherit (pkgs)
-        colima
+        sqlx-cli #for interaction between rust back end and sql database
+        colima #runs docker on mac 
         docker
         rustup
         tmux
@@ -64,8 +65,8 @@ in
         typescript
         tree
 	    neovim
-        javacc
-        zulu24
+        javacc #java parser generator
+        zulu24 #java jdk 24
         go
         php
         julia-lts
