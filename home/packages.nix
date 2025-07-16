@@ -56,6 +56,7 @@ in
     {
       # Some basics
       inherit (pkgs)
+        lld_20
         neofetch
         sqlx-cli #for interaction between rust back end and sql database
         colima #runs docker on mac 
