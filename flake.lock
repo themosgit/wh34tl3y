@@ -17,6 +17,7 @@
       "original": {
         "owner": "nix-darwin",
         "repo": "nix-darwin",
+        "rev": "e04a388232d9a6ba56967ce5b53a8a6f713cdfcf",
         "type": "github"
       }
     },
@@ -55,6 +56,7 @@
       "original": {
         "owner": "edolstra",
         "repo": "flake-compat",
+        "rev": "9100a0f413b0c601e0533d1d94ffd501ce2e7885",
         "type": "github"
       }
     },
@@ -73,6 +75,7 @@
       "original": {
         "owner": "numtide",
         "repo": "flake-utils",
+        "rev": "11707dc2f618dd54ca8739b309ec4fc024de578b",
         "type": "github"
       }
     },
@@ -111,6 +114,7 @@
       "original": {
         "owner": "nix-community",
         "repo": "home-manager",
+        "rev": "1fa73bb2cc39e250eb01e511ae6ac83bfbf9f38c",
         "type": "github"
       }
     },
@@ -125,8 +129,8 @@
       },
       "original": {
         "owner": "NixOS",
-        "ref": "master",
         "repo": "nixpkgs",
+        "rev": "10e60bc678024e12bf5d5611f0ca86cca831bce0",
         "type": "github"
       }
     },
@@ -141,8 +145,8 @@
       },
       "original": {
         "owner": "NixOS",
-        "ref": "nixpkgs-25.05-darwin",
         "repo": "nixpkgs",
+        "rev": "dceee767199096d695acefbfd31adc04381e1cb2",
         "type": "github"
       }
     },
@@ -157,8 +161,8 @@
       },
       "original": {
         "owner": "NixOS",
-        "ref": "nixpkgs-unstable",
         "repo": "nixpkgs",
+        "rev": "472908faa934435cf781ae8fac77291af3d137d3",
         "type": "github"
       }
     },
@@ -204,6 +208,7 @@
       "original": {
         "owner": "malob",
         "repo": "prefmanager",
+        "rev": "b9d8e2d2d4d9bcf3e46232c4ad9f6207d23921a0",
         "type": "github"
       }
     },

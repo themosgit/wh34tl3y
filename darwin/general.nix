@@ -1,4 +1,4 @@
-{pkgs, ... }:
+{pkgs, lib, ... }:
 
 {
   # Networking
@@ -41,4 +41,13 @@
   nix.gc.options = "--delete-older-than 15d";
   nix.optimise.automatic = true;
   nix.optimise.interval.Hour = 4;
+
+  # Security configuration
+  nix.settings = {
+    # Allow trusted users to use nix
+    trusted-users = [ "root" "themos" ];
+    # Enable flakes and nix command
+    experimental-features = [ "nix-command" "flakes" ];
+  };
+
 }

@@ -64,10 +64,11 @@ in
         docker
         rustup
         tmux
-      	gdb
+        gdb
         typescript
         tree
-	    neovim
+        neovim
+        nodejs
         javacc #java parser generator
         zulu24 #java jdk 24
         go
@@ -85,12 +86,16 @@ in
         parallel # runs commands in parallel
         ripgrep # better version of `grep`
         tealdeer # rust implementation of `tldr`
+        bunyan-rs # fast JSON log viewer
         # thefuck
         unrar # extract RAR archives
         upterm # secure terminal sharing
         wget
         xz # extract XZ archives
         ;
+
+      # Node.js packages
+      npm = pkgs.nodePackages.npm;
 
       # Useful nix related tools
       inherit (pkgs)

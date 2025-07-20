@@ -2,34 +2,34 @@
 	description = "wheatley nix config";
 
 	inputs = {
-		nixpkgs-master.url = "github:NixOS/nixpkgs/master";
-		nixpkgs-stable.url = "github:NixOS/nixpkgs/nixpkgs-25.05-darwin";
-		nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
-
+		# Pin to specific commits for reproducibility
+		nixpkgs-master.url = "github:NixOS/nixpkgs/10e60bc678024e12bf5d5611f0ca86cca831bce0";
+		nixpkgs-stable.url = "github:NixOS/nixpkgs/dceee767199096d695acefbfd31adc04381e1cb2";
+		nixpkgs-unstable.url = "github:NixOS/nixpkgs/472908faa934435cf781ae8fac77291af3d137d3";
 
 		darwin = {
-			url = "github:nix-darwin/nix-darwin";
+			url = "github:nix-darwin/nix-darwin/e04a388232d9a6ba56967ce5b53a8a6f713cdfcf";
 			inputs.nixpkgs.follows = "nixpkgs-unstable";
 		};
 
 		home-manager = {
-			url = "github:nix-community/home-manager";
+			url = "github:nix-community/home-manager/1fa73bb2cc39e250eb01e511ae6ac83bfbf9f38c";
 			inputs.nixpkgs.follows = "nixpkgs-unstable";
 		};
 
 		flake-compat = {
-			url = "github:edolstra/flake-compat";
+			url = "github:edolstra/flake-compat/9100a0f413b0c601e0533d1d94ffd501ce2e7885";
 			flake = false;
 		};
 
-	   	flake-utils.url = "github:numtide/flake-utils";
+		flake-utils.url = "github:numtide/flake-utils/11707dc2f618dd54ca8739b309ec4fc024de578b";
 
-    		prefmanager = {
-      			url = "github:malob/prefmanager";
-      			inputs.nixpkgs.follows = "nixpkgs-unstable";
-      			inputs.flake-compat.follows = "flake-compat";
-      			inputs.flake-utils.follows = "flake-utils";
-    		};
+		prefmanager = {
+			url = "github:malob/prefmanager/b9d8e2d2d4d9bcf3e46232c4ad9f6207d23921a0";
+			inputs.nixpkgs.follows = "nixpkgs-unstable";
+			inputs.flake-compat.follows = "flake-compat";
+			inputs.flake-utils.follows = "flake-utils";
+		};
 	};
 
 	outputs = 

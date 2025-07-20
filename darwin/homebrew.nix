@@ -45,6 +45,7 @@ in
   # If an app isn't available in the Mac App Store, or the version in the App Store has
   # limitiations, e.g., Transmit, install the Homebrew Cask.
   homebrew.casks = [
+    "zen"
     "discord"
     "firefox"
     "ghostty"
@@ -64,9 +65,7 @@ in
   # For cli packages that aren't currently available for macOS in `nixpkgs`. Packages should be
   # installed in `../home/packages.nix` whenever possible.
   homebrew.brews = [
-  	"composer"
-  	"luarocks"
-    "nodejs"
-    "nvm"
+    "composer"
+    "luarocks"
   ];
 }
