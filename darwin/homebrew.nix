@@ -36,7 +36,7 @@ in
   # Prefer installing application from the Mac App Store
   homebrew.masApps = {
     "word" = 462054704;
-    "excel" = 462058535;
+    "excel" = 462058435;
     "powerpoint" = 462062816;
     "Tailscale" = 1475387142;
     Xcode = 497799835;
