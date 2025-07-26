@@ -52,8 +52,8 @@ in
     "keepassxc"
     "syncthing"
     "spotify"
+    "libreoffice"
     "thunderbird"
-    # "keybase"
     "transmission"
   ];
 

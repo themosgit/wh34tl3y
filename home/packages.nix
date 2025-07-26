@@ -56,6 +56,7 @@ in
     {
       # Some basics
       inherit (pkgs)
+        pandoc #convert pdfs to .md
         postgresql_16
         lld_20
         neofetch
