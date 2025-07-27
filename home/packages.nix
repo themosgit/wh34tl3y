@@ -56,7 +56,8 @@ in
     {
       # Some basics
       inherit (pkgs)
-        pandoc #convert pdfs to .md
+        python313
+        glow  #view .md in terminal
         postgresql_16
         lld_20
         neofetch
