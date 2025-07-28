@@ -56,6 +56,8 @@ in
     {
       # Some basics
       inherit (pkgs)
+        doctl
+        gemini-cli
         python313
         glow  #view .md in terminal
         postgresql_16
