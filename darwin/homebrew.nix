@@ -55,6 +55,7 @@ in
     "libreoffice"
     "thunderbird"
     "transmission"
+    "adobe-acrobat-reader"
   ];
 
   # Hack: https://github.com/ghostty-org/ghostty/discussions/2832
