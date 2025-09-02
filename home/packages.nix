@@ -56,6 +56,7 @@ in
     {
       # Some basics
       inherit (pkgs)
+        killall
         doctl
         gemini-cli
         python313
