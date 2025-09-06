@@ -56,6 +56,7 @@ in
     {
       # Some basics
       inherit (pkgs)
+        nmap
         killall
         doctl
         gemini-cli

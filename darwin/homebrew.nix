@@ -38,7 +38,7 @@ in
     "word" = 462054704;
     "excel" = 462058435;
     "powerpoint" = 462062816;
-    "Tailscale" = 1475387142;
+    "wireguard" = 1451685025;
     Xcode = 497799835;
   };
 
