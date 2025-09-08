@@ -40,6 +40,13 @@ in
   # Some options also set in `../darwin/homebrew.nix`.
   programs.ssh.enable = true;
   programs.ssh.controlPath = "~/.ssh/%C"; # ensures the path is unique but also fixed length
+  programs.ssh.matchBlocks = {
+    "glados" = {
+      hostname = "192.168.178.203";
+      user = "themos";
+      port = 22;
+    };
+  };
 
   # Zoxide, a faster way to navigate the filesystem
   # https://github.com/ajeetdsouza/zoxide
