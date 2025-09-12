@@ -46,16 +46,16 @@ in
   # limitiations, e.g., Transmit, install the Homebrew Cask.
   homebrew.casks = [
     "steam"
-    "discord"
     "firefox"
     "ghostty"
     "keepassxc"
     "syncthing"
     "spotify"
+    "discord"
     "libreoffice"
     "thunderbird"
     "transmission"
-    "adobe-acrobat-reader"
+    "docker-desktop"
   ];
 
   # Hack: https://github.com/ghostty-org/ghostty/discussions/2832

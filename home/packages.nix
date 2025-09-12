@@ -45,7 +45,7 @@ in
         # You can add or remove any options you want.
         controlMaster = "auto";
         controlPersist = "1m";
-        controlPath = "%h/%r@%C";
+        controlPath = "~/.ssh/master-%r@%n:%p";
       };
       "glados" = {
         hostname = "192.168.178.203";
@@ -74,7 +74,6 @@ in
         glow # view .md in terminal
         lld_20
         neofetch
-        colima # runs docker on mac
         docker
         tmux
         gdb
@@ -89,11 +88,9 @@ in
         eza # fancy version of `ls`
         fd # fancy version of `find`
         hyperfine # benchmarking tool
-        mosh # wrapper for `ssh` that better and not dropping connections
-        parallel # runs commands in parallel
+        mosh # wrapper for `ssh` thats better and not dropping connections
         ripgrep # better version of `grep`
         tealdeer # rust implementation of `tldr`
-        bunyan-rs # fast JSON log viewer
         unrar # extract RAR archives
         upterm # secure terminal sharing
         wget
