@@ -1,4 +1,4 @@
-{pkgs, lib, ... }:
+{ pkgs, lib, ... }:
 
 {
   # Networking
@@ -45,9 +45,15 @@
   # Security configuration
   nix.settings = {
     # Allow trusted users to use nix
-    trusted-users = [ "root" "themos" ];
+    trusted-users = [
+      "root"
+      "themos"
+    ];
     # Enable flakes and nix command
-    experimental-features = [ "nix-command" "flakes" ];
+    experimental-features = [
+      "nix-command"
+      "flakes"
+    ];
   };
 
 }

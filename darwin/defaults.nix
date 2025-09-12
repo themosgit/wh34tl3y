@@ -22,12 +22,12 @@
     mru-spaces = false;
     tilesize = 54;
     persistent-apps = [
-    	"/Applications/Ghostty.app"
-    	"/Applications/Keepassxc.app"
-    	"/Applications/Thunderbird.app"
-    	"/Applications/Firefox.app"
-    	"/Applications/Discord.app"
-    	"/Applications/Spotify.app"
+      "/Applications/Ghostty.app"
+      "/Applications/Keepassxc.app"
+      "/Applications/Thunderbird.app"
+      "/Applications/Firefox.app"
+      "/Applications/Discord.app"
+      "/Applications/Spotify.app"
     ];
 
     # Disable all hot corners
@@ -45,7 +45,6 @@
 
   # Spaces
   system.defaults.spaces.spans-displays = false;
-
 
   system.defaults.WindowManager.EnableTiledWindowMargins = false;
 

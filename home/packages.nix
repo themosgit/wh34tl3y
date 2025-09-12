@@ -35,20 +35,26 @@ in
   home.sessionVariables.EZA_COLORS = "xx=0"; # https://github.com/eza-community/eza/issues/994
   home.sessionVariables.EZA_ICON_SPACING = 2;
 
-  # SSH
-  # https://nix-community.github.io/home-manager/options.html#opt-programs.ssh.enable
-  # Some options also set in `../darwin/homebrew.nix`.
-  programs.ssh.enable = true;
-  programs.ssh.controlPath = "~/.ssh/%C"; # ensures the path is unique but also fixed length
-  programs.ssh.matchBlocks = {
-    "glados" = {
-      hostname = "192.168.178.203";
-      user = "themos";
-      port = 22;
+  #SSH
+  programs.ssh = {
+    enable = true;
+    enableDefaultConfig = false;
+    matchBlocks = {
+      "*" = {
+        # The old defaults are now set explicitly here.
+        # You can add or remove any options you want.
+        controlMaster = "auto";
+        controlPersist = "1m";
+        controlPath = "%h/%r@%C";
+      };
+      "glados" = {
+        hostname = "192.168.178.203";
+        user = "themos";
+        port = 22;
+      };
     };
   };
-
-  # Zoxide, a faster way to navigate the filesystem
+  # Zoxide, a faster way to navigate the filesystem   # Zoxide, a faster way to navigate the filesystem
   # https://github.com/ajeetdsouza/zoxide
   # https://nix-community.github.io/home-manager/options.html#opt-programs.zoxide.enable
   programs.zoxide.enable = true;
@@ -56,9 +62,8 @@ in
   # Zsh
   # https://nix-community.github.io/home-manager/options.xhtml#opt-programs.zsh.enable
   programs.zsh.enable = true;
-  programs.zsh.dotDir = ".config/zsh";
+  programs.zsh.dotDir = "${config.xdg.configHome}/zsh";
   programs.zsh.history.path = "${config.xdg.stateHome}/zsh_history";
-
   home.packages = attrValues (
     {
       # Some basics
@@ -66,26 +71,15 @@ in
         nmap
         killall
         doctl
-        gemini-cli
-        python313
-        glow  #view .md in terminal
-        postgresql_16
+        glow # view .md in terminal
         lld_20
         neofetch
-        sqlx-cli #for interaction between rust back end and sql database
-        colima #runs docker on mac 
+        colima # runs docker on mac
         docker
-        rustup
         tmux
         gdb
-        typescript
         tree
         neovim
-        nodejs
-        javacc #java parser generator
-        zulu24 #java jdk 24
-        go
-        php
         julia-lts
         tree-sitter # neovim parser
         bandwhich # display current network utilization by process
@@ -100,15 +94,11 @@ in
         ripgrep # better version of `grep`
         tealdeer # rust implementation of `tldr`
         bunyan-rs # fast JSON log viewer
-        # thefuck
         unrar # extract RAR archives
         upterm # secure terminal sharing
         wget
         xz # extract XZ archives
         ;
-
-      # Node.js packages
-      npm = pkgs.nodePackages.npm;
 
       # Useful nix related tools
       inherit (pkgs)
@@ -119,6 +109,7 @@ in
         nixpkgs-review # review pull-requests on nixpkgs
         node2nix # generate Nix expressions to build NPM packages
         statix # lints and suggestions for the Nix programming language
+        nixfmt-rfc-style # nix formatter
         ;
 
     }
