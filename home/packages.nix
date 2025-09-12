@@ -107,7 +107,6 @@ in
         nix-tree # interactively browse dependency graphs of Nix derivations
         nix-update # swiss-knife for updating nix packages
         nixpkgs-review # review pull-requests on nixpkgs
-        node2nix # generate Nix expressions to build NPM packages
         statix # lints and suggestions for the Nix programming language
         nixfmt-rfc-style # nix formatter
         ;
