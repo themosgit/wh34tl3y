@@ -68,6 +68,7 @@ in
     {
       # Some basics
       inherit (pkgs)
+        colima
         nmap
         killall
         doctl

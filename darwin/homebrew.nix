@@ -55,7 +55,6 @@ in
     "libreoffice"
     "thunderbird"
     "transmission"
-    "docker-desktop"
   ];
 
   # Hack: https://github.com/ghostty-org/ghostty/discussions/2832
