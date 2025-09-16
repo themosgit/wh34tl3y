@@ -68,6 +68,8 @@ in
     {
       # Some basics
       inherit (pkgs)
+        vencord
+        ookla-speedtest
         colima
         nmap
         killall

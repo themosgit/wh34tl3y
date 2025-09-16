@@ -35,9 +35,6 @@ in
 
   # Prefer installing application from the Mac App Store
   homebrew.masApps = {
-    "word" = 462054704;
-    "excel" = 462058435;
-    "powerpoint" = 462062816;
     "wireguard" = 1451685025;
     Xcode = 497799835;
   };
@@ -51,7 +48,6 @@ in
     "keepassxc"
     "syncthing"
     "spotify"
-    "discord"
     "libreoffice"
     "thunderbird"
     "transmission"
