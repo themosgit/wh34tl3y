@@ -68,9 +68,9 @@ in
     {
       # Some basics
       inherit (pkgs)
+        colima
         vencord
         ookla-speedtest
-        colima
         nmap
         killall
         doctl
@@ -84,7 +84,6 @@ in
         neovim
         julia-lts
         tree-sitter # neovim parser
-        bandwhich # display current network utilization by process
         coreutils
         curl
         du-dust # fancy version of `du`
