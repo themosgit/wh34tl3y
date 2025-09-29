@@ -47,11 +47,11 @@ in
     "firefox"
     "ghostty"
     "keepassxc"
-    "syncthing"
     "spotify"
     "libreoffice"
     "thunderbird"
     "transmission"
+    "macs-fan-control"
   ];
 
   # Hack: https://github.com/ghostty-org/ghostty/discussions/2832

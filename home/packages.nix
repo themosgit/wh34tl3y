@@ -35,25 +35,26 @@ in
   home.sessionVariables.EZA_COLORS = "xx=0"; # https://github.com/eza-community/eza/issues/994
   home.sessionVariables.EZA_ICON_SPACING = 2;
 
+
+
   #SSH
   programs.ssh = {
     enable = true;
     enableDefaultConfig = false;
     matchBlocks = {
       "*" = {
-        # The old defaults are now set explicitly here.
-        # You can add or remove any options you want.
         controlMaster = "auto";
         controlPersist = "1m";
         controlPath = "~/.ssh/master-%r@%n:%p";
       };
       "glados" = {
-        hostname = "192.168.178.203";
+        hostname = "192.168.178.204";
         user = "themos";
         port = 22;
       };
     };
   };
+
   # Zoxide, a faster way to navigate the filesystem   # Zoxide, a faster way to navigate the filesystem
   # https://github.com/ajeetdsouza/zoxide
   # https://nix-community.github.io/home-manager/options.html#opt-programs.zoxide.enable
@@ -68,8 +69,8 @@ in
     {
       # Some basics
       inherit (pkgs)
+        rustup
         colima
-        vencord
         ookla-speedtest
         nmap
         killall

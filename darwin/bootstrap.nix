@@ -53,9 +53,7 @@
   environment.variables.SHELL = "${pkgs.fish}/bin/fish";
   users.users.themos.shell = pkgs.fish;
 
-  # Install and setup ZSH to work with nix(-darwin) as well
-
-  # Used for backwards compatibility, please read the changelog before changing.
+  # Used For backwards compatibility, please read the changelog before changing.
   # $ darwin-rebuild changelog
   system.stateVersion = 6;
 }
