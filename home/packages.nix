@@ -48,9 +48,8 @@ in
         controlPath = "~/.ssh/master-%r@%n:%p";
       };
       "glados" = {
-        hostname = "192.168.178.204";
+        hostname = "ssh.gl4dos.com";
         user = "themos";
-        port = 22;
       };
     };
   };

@@ -35,7 +35,6 @@ in
 
   # Prefer installing application from the Mac App Store
   homebrew.masApps = {
-    "wireguard" = 1451685025;
     Xcode = 497799835;
   };
 
