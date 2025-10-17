@@ -50,6 +50,7 @@ in
     "libreoffice"
     "thunderbird"
     "transmission"
+    "caffeine"
     "macs-fan-control"
   ];
 
@@ -63,5 +64,6 @@ in
   homebrew.brews = [
     "composer"
     "luarocks"
+    "octave"
   ];
 }
