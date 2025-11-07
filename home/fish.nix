@@ -131,8 +131,7 @@ in
     ".." = "cd ..";
     ":q" = "exit";
     cat = "${bat}/bin/bat";
-    du = "${du-dust}/bin/dust";
-    g = "${gitAndTools.git}/bin/git";
+    du = "${dust}/bin/dust";
     la = "ll -a";
     tb = "toggle-background";
   };

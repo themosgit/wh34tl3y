@@ -86,7 +86,7 @@ in
         tree-sitter # neovim parser
         coreutils
         curl
-        du-dust # fancy version of `du`
+        dust # fancy version of `du`
         eza # fancy version of `ls`
         fd # fancy version of `find`
         hyperfine # benchmarking tool
