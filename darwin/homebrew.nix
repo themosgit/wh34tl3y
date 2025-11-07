@@ -49,6 +49,7 @@ in
     "spotify"
     "libreoffice"
     "thunderbird"
+    "wireshark"
     "transmission"
     "caffeine"
     "macs-fan-control"
