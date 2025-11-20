@@ -53,6 +53,7 @@ in
     "transmission"
     "caffeine"
     "macs-fan-control"
+    "skim"
   ];
 
   # Hack: https://github.com/ghostty-org/ghostty/discussions/2832
