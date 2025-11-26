@@ -49,7 +49,7 @@ in
     "spotify"
     "libreoffice"
     "thunderbird"
-    "wireshark"
+    "wireshark-app"
     "transmission"
     "caffeine"
     "macs-fan-control"
