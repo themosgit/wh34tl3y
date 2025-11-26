@@ -113,13 +113,13 @@ in
   };
   # }}}
 
+
   # Fish configuration ------------------------------------------------------------------------- {{{
 
   # Aliases
-  home.shellAliases = with pkgs; {
+  programs.fish.shellAliases = with pkgs; {
     # Nix related
-    drb = "darwin-rebuild build --flake ${nixConfigDirectory}";
-    drs = "sudo darwin-rebuild switch --flake ${nixConfigDirectory}";
+    rebuild = "darwin-rebuild switch --flake ${nixConfigDirectory}";
     flakeup = "nix flake update ${nixConfigDirectory}";
     nb = "nix build";
     nd = "nix develop";
@@ -134,6 +134,7 @@ in
     du = "${dust}/bin/dust";
     la = "ll -a";
     tb = "toggle-background";
+
   };
 
   programs.fish.shellAbbrs = {
@@ -180,7 +181,7 @@ in
   '';
 
   programs.fish.interactiveShellInit = ''
-    set -g fish_greeting ""
+    set -g fish_greeting "ye boi"
     # {pkgs.thefuck}/bin/thefuck --alias | source
 
     # Run function to set colors that are dependant on `$term_background` and to register them so

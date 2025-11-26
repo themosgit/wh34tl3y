@@ -97,6 +97,7 @@ in
         upterm # secure terminal sharing
         wget
         xz # extract XZ archives
+        claude-code
         ;
 
       # Useful nix related tools
