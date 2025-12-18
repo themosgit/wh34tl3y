@@ -36,12 +36,12 @@ in
   # Prefer installing application from the Mac App Store
   homebrew.masApps = {
     Xcode = 497799835;
+    PowerPoint = 462062816;
   };
 
   # If an app isn't available in the Mac App Store, or the version in the App Store has
   # limitiations, e.g., Transmit, install the Homebrew Cask.
   homebrew.casks = [
-    "docker-desktop"
     "steam"
     "firefox"
     "ghostty"

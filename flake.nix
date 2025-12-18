@@ -4,7 +4,7 @@
     nixpkgs-master.url = "github:NixOS/nixpkgs/master";
     # Note: The stable branch name changes over time (e.g., nixos-24.05, nixos-24.11).
     # Update this to the current stable branch you want to follow.
-    nixpkgs-stable.url = "github:NixOS/nixpkgs/nixos-25.05";
+    nixpkgs-stable.url = "github:NixOS/nixpkgs/nixos-25.11";
     nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
 
     darwin = {
