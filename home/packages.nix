@@ -71,7 +71,6 @@ in
         rustup
         colima
         ookla-speedtest
-        nmap
         killall
         doctl
         glow # view .md in terminal
@@ -85,7 +84,6 @@ in
         julia-lts
         tree-sitter # neovim parser
         coreutils
-        curl
         dust # fancy version of `du`
         eza # fancy version of `ls`
         fd # fancy version of `find`
@@ -96,8 +94,16 @@ in
         unrar # extract RAR archives
         upterm # secure terminal sharing
         wget
-        xz # extract XZ archives
         claude-code
+        ;
+
+     #security things
+     inherit (pkgs)
+        curl
+        openvpn
+        ffuf
+        nmap
+        dirbuster
         ;
 
       # Useful nix related tools
