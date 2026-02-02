@@ -140,6 +140,7 @@
         themos-packages = import ./home/packages.nix;
         themos-starship = import ./home/starship.nix;
         themos-starship-symbols = import ./home/starship-symbols.nix;
+        themos-tmux = import ./home/tmux.nix;
 
         colors = import ./modules/home/colors;
         home-user-info =

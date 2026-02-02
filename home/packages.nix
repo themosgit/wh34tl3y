@@ -76,6 +76,7 @@ in
         glow # view .md in terminal
         lld_20
         neofetch
+        tcptraceroute
         docker
         tmux
         gdb
@@ -95,6 +96,8 @@ in
         upterm # secure terminal sharing
         wget
         claude-code
+        opencode
+        hashcat
         ;
 
      #security things

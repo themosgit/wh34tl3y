@@ -9,10 +9,25 @@
   programs.git.settings = {
     diff.colorMoved = "default";
     pull.rebase = true;
-    push.autoSetupRemote = true;
-    user.email = config.home.user-info.email;
-    user.name = config.home.user-info.fullName;
+    user.name = "themosgit";
+	user.email = "themos360@gmail.com";
+	init.defaultBranch = "main";
+	push.autoSetupRemote = true;
+	url = {
+	  "git@github.com:" = {
+		insteadOf = "https://github.com/";
+	  };
+	};
   };
+
+  programs.git.signing = {
+      key = "~/.ssh/id_ed25519.pub";
+      signByDefault = true;
+  };
+
+  programs.git.extraConfig.gpg.format = "ssh";
+
+  services.ssh-agent.enable = true;
 
   programs.git.ignores = [
     "*~"

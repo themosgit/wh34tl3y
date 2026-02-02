@@ -1,4 +1,4 @@
-{ config, lib, ... }:
+{ lib, pkgs, ... }:
 
 let
   inherit (lib.generators) toKeyValue mkKeyValueDefault;
@@ -15,17 +15,17 @@ in
       font-family = "JetBrains Mono";
       font-size = 14;
       font-thicken = false;
-
       cursor-invert-fg-bg = true;
       cursor-style = "bar";
+
 
       background-opacity = 0.95;
       background-blur = true;
 
-      shell-integration = "fish";
+      shell-integration = "${pkgs.fish}/bin/fish";
 
       macos-icon = "xray";
-      theme = "light:ayu_light,dark:ayu";
+      theme = "dark:ayu";
       window-theme = "system";
       window-colorspace = "display-p3";
       # background-blur-radius = 20;

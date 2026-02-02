@@ -1,8 +1,7 @@
 { config, lib, ... }:
 
 let
-  inherit (lib) mkIf;
-  caskPresent = cask: lib.any (x: x.name == cask) config.homebrew.casks;
+  inherit (lib) mkIf; caskPresent = cask: lib.any (x: x.name == cask) config.homebrew.casks;
   brewEnabled = config.homebrew.enable;
   brewShellInit = mkIf brewEnabled ''
     eval "$(${config.homebrew.brewPrefix}/brew shellenv)"
@@ -54,6 +53,7 @@ in
     "caffeine"
     "macs-fan-control"
     "skim"
+    "mullvad-vpn"
   ];
 
   # Hack: https://github.com/ghostty-org/ghostty/discussions/2832
