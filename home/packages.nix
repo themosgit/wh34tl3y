@@ -79,7 +79,6 @@ in
         tcptraceroute
         docker
         tmux
-        gdb
         tree
         neovim
         julia-lts
@@ -98,6 +97,7 @@ in
         claude-code
         opencode
         hashcat
+        nodejs_24
         ;
 
      #security things
@@ -117,7 +117,7 @@ in
         nix-update # swiss-knife for updating nix packages
         nixpkgs-review # review pull-requests on nixpkgs
         statix # lints and suggestions for the Nix programming language
-        nixfmt-rfc-style # nix formatter
+        nixfmt # nix formatter
         ;
 
     }

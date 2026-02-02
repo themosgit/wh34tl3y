@@ -1,0 +1,2 @@
+/Users/themos/.config/ghostty/config:11:theme: invalid value dark:ayu\ 
+/Users/themos/.config/ghostty/config:10:shell-integration: invalid value "/nix/store/djms86zh0yjgss1bbk2gj5xn1w8ag5fp-fish-4.2.1/bin/fish", valid values are: none, detect, bash, elvish, fish, zsh

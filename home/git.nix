@@ -25,7 +25,7 @@
       signByDefault = true;
   };
 
-  programs.git.extraConfig.gpg.format = "ssh";
+  programs.git.settings.gpg.format = "ssh";
 
   services.ssh-agent.enable = true;
 

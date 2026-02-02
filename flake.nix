@@ -126,7 +126,6 @@
         themos-defaults = import ./darwin/defaults.nix;
         themos-general = import ./darwin/general.nix;
         themos-homebrew = import ./darwin/homebrew.nix;
-
         # Modules I've created
         users-primaryUser = import ./modules/darwin/users.nix;
       };
