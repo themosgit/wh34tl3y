@@ -23,7 +23,7 @@ in
     shell-integration = "fish";
 
     macos-icon = "xray";
-    theme = "rose pine";
+    theme = "ayu";
     window-theme = "system";
     window-colorspace = "display-p3";
     # background-blur-radius = 20;
