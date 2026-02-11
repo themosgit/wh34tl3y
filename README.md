@@ -1,7 +1,7 @@
 # nix-darwin-config
 
 
-First install upstream nix from the determinate installer chosing no when asked if you want to install determinate nix.
+First install upstream nix from the determinate installer chοosing no when asked if you want to install determinate nix.
 This config uses flakes and home manager. Homebrew is used to install mac appstore apps and gui apps that we want to show up when searching spotlight.
 
 
