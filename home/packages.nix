@@ -94,7 +94,6 @@ in
         unrar # extract RAR archives
         upterm # secure terminal sharing
         wget
-        claude-code
         opencode
         hashcat
         nodejs_24
