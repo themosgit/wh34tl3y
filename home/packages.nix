@@ -68,21 +68,11 @@ in
     {
       # Some basics
       inherit (pkgs)
-        rustup
-        colima
         ookla-speedtest
         killall
         doctl
-        glow # view .md in terminal
-        lld_20
-        neofetch
-        tcptraceroute
-        docker
-        tmux
+        fastfetch
         tree
-        neovim
-        julia-lts
-        tree-sitter # neovim parser
         coreutils
         dust # fancy version of `du`
         eza # fancy version of `ls`
@@ -94,10 +84,23 @@ in
         unrar # extract RAR archives
         upterm # secure terminal sharing
         wget
-        opencode
-        hashcat
-        nodejs_24
         ;
+
+    inherit(pkgs)
+        git
+        git-lfs
+        neovim
+        tree-sitter
+        tmux
+        jq
+        man
+        rustup
+        container
+        presenterm
+        glow
+        opencode
+        ;
+
 
      #security things
      inherit (pkgs)
@@ -105,9 +108,19 @@ in
         openvpn
         ffuf
         nmap
+        hashcat
         dirbuster
+        tcptraceroute
         ;
 
+     inherit (pkgs.llvmPackages)
+        clang
+        clang-tools
+        lldb
+        libllvm
+        libcxx
+        bintools-unwrapped
+     ;
       # Useful nix related tools
       inherit (pkgs)
         comma # run software from without installing it
